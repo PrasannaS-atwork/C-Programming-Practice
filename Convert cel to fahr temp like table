@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+	int fah,cel;
+	int upper,lower,step;
+	printf("Enter the starting and ending value of temp in celL: ");
+	scanf("%d%d",&upper,&lower);
+	printf("Enter the step value: ");
+	scanf("%d",&step);
+	for (int c=upper; c<lower;c+=step)
+		printf("%d  %d\n",c,(c*9/5)+32);
+	return 0;
+}
